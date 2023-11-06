@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="34dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_latitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_altitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_longitude" />
+
+    <TextView
+        android:id="@+id/tv_altitude"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_latitude" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/sw_gpsWiFi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_altitude" />
+
+    <Switch
+        android:id="@+id/sw_gpsWiFi"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="86dp"
+        android:text="GPS/WIFI"
+        app:layout_constraintBottom_toTopOf="@+id/btn_getLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+    <Button
+        android:id="@+id/btn_getLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="147dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sw_gpsWiFi"
+        app:layout_constraintTop_toBottomOf="@+id/sw_gpsWiFi" />
+</androidx.constraintlayout.widget.ConstraintLayout>
